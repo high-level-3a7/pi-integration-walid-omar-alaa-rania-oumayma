@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="601.0" style="-fx-background-color: #08415d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui4.SupprimerAbonnementController">
+   <children>
+      <Label layoutX="97.0" layoutY="41.0" prefHeight="42.0" prefWidth="482.0" text="Supprimer l'Abonnement" textFill="#f2eaea">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fxID" layoutX="291.0" layoutY="207.0" />
+      <Label layoutX="153.0" layoutY="210.0" prefHeight="21.0" prefWidth="122.0" text="Id Abonnement" textFill="#070707">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="fxsupprimer" layoutX="211.0" layoutY="329.0" mnemonicParsing="false" onAction="#SupprimerAbonnemnt" prefHeight="25.0" prefWidth="161.0" text="Supprimer">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="retour" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+   </children>
+</AnchorPane>

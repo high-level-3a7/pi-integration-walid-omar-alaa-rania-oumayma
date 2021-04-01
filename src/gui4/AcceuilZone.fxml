@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="877.0" style="-fx-background-color: #08415d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui4.AcceuilZoneController">
+   <children>
+      <VBox layoutX="-1.0" layoutY="-7.0" prefHeight="610.0" prefWidth="264.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="gotouser" mnemonicParsing="false" onMouseClicked="#gotouser" prefHeight="62.0" prefWidth="224.0" style="-fx-border-color: #53b7d2;" text="User/Admin">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="gotoreclamation" mnemonicParsing="false" onMouseClicked="#gotoreclamation" prefHeight="67.0" prefWidth="223.0" style="-fx-border-color: #53b7d2;" text="Réclamation/Activité">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="gotocommande" mnemonicParsing="false" onMouseClicked="#gotocommande" prefHeight="67.0" prefWidth="224.0" style="-fx-border-color: #53b7d2;" text="Boutique">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="retour" mnemonicParsing="false" onAction="#retour" prefHeight="72.0" prefWidth="223.0" style="-fx-border-color: #53b7d2;" text="Abonnement /zone d’accès ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="gotomateriel" mnemonicParsing="false" onMouseClicked="#gotomateriel" prefHeight="72.0" prefWidth="224.0" style="-fx-border-color: #53b7d2;" text="Gestion Materiel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="gotoemploi" mnemonicParsing="false" onMouseClicked="#gotoemploi" prefHeight="72.0" prefWidth="224.0" style="-fx-border-color: #53b7d2;" text="Emploi du temps">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="Table" layoutX="275.0" layoutY="141.0" opacity="0.8" prefHeight="384.0" prefWidth="556.0">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="161.0" text="Nom" />
+            <TableColumn fx:id="horaireouverture" prefWidth="195.0" text="Horaire Ouverture " />
+            <TableColumn fx:id="horairecloture" prefWidth="230.0" text="Horaire  Cloture" />
+         </columns>
+      </TableView>
+      <TextField fx:id="fxrecherche" layoutX="275.0" layoutY="95.0" prefHeight="35.0" prefWidth="226.0" promptText="recherche">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="460.0" layoutY="31.0" text="Acceuil Zone d'accés" textFill="#f2ecec">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="Ajouter" layoutX="298.0" layoutY="542.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="27.0" prefWidth="122.0" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Modifier" layoutX="443.0" layoutY="542.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="31.0" prefWidth="122.0" text="Modifier">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Afficher" layoutX="589.0" layoutY="542.0" mnemonicParsing="false" onAction="#Afficher" prefHeight="31.0" prefWidth="122.0" text="Afficher">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Supprimer" layoutX="729.0" layoutY="542.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="31.0" prefWidth="122.0" text="Supprimer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="BPDF" layoutX="535.0" layoutY="100.0" mnemonicParsing="false" onAction="#BPDF" text="Imprimer en format PDF" />
+   </children>
+</AnchorPane>
